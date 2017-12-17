@@ -31,7 +31,6 @@
         let hideIt = (span) => {
           if (span && alreadyHidden < threshold) {
             alreadyHidden++;
-            console.log(span);
             if (span.classList.contains("is-fading")) {
               hideIt(span.nextElementSibling);
             } else {
